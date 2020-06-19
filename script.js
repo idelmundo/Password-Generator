@@ -10,7 +10,8 @@ function generatePassword() {
     var letters = "abcdefghijklmnopqrstuvwxyz";
     var specialSymbol = '({}[]()~,;:.<>)';
 
-    var passLink = parseInt(prompt("Please choose length set at least 8 charterts to 128 charters"));
+
+    var passLink = parseInt(prompt("Please choose length set at least 8 characters to 128 characters"));
     var passNumber = confirm("Would you like to add numbers");
     var passLLettrs = confirm("Would you like to add lowercase letter");
     var passUCLettrs = confirm("Would you like to add uppercase letter");
@@ -35,8 +36,6 @@ function generatePassword() {
     if (passSC) {
         password += specialSymbol;
     }
-
-
 
 
     for (var i = 0; i <= passLink; i++) {
